@@ -1,0 +1,173 @@
+body {
+    background-color: #fff2d6;
+    font-family: 'Nunito Sans';
+}
+
+button {
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+}
+
+#main-content {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+h1 {
+    font-family: 'Gaegu';
+    margin-top: -25px;
+    margin-bottom: 0;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: white 0 0 3px;
+}
+
+h2 {
+    font-family: 'Gaegu';
+    margin-top: -20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#H {
+    color: #ff0000;
+}
+
+#U {
+    color: #ffff00;
+    text-shadow: #8080ff 0 0 1px;
+}
+
+#E {
+    color: #0060ff;
+    font-size: 92px;
+}
+
+#man {
+    color: #6c4b00;
+    text-shadow: none;
+}
+
+
+.buttons {
+    display: flex;
+    margin: 0 5%;
+    align-self: center;
+    font-weight: 600;
+}
+
+.buttons button {
+    transition-duration: 50ms;
+    width: 100px;
+    color: white;
+    letter-spacing: 0.75px;
+    background-color: #6c4b00;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.release-status {
+    height: 15px;
+    font-family: 'Gaegu';
+    font-size: 12px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: -6px;
+}
+
+.coming-soon {
+    opacity: 0.5;
+}
+
+
+.coming-soon:hover~.release-status {
+    opacity: 1;
+}
+
+.coming-soon:focus~.release-status {
+    opacity: 1;
+}
+
+.buttons a button:hover {
+    transition-duration: 50ms;
+    cursor: pointer;
+    background-color: #805900;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 1px 1px;
+}
+
+.buttons a button:active {
+    transition-duration: 50ms;
+    background-color: #6c4b00;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.spacer {
+    flex: 100%;
+}
+
+.mid-spacer {
+    flex: 10%;
+}
+
+
+.chatgpt {
+    transition: 150ms;
+    position: absolute;
+    right: 0;
+    background-color: #ddffee;
+    border-radius: 12px 0 0 12px;
+    letter-spacing: 0.5px;
+    width: 220px;
+    padding: 20px;
+    bottom: 33%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
+}
+
+.chatgpt:hover {
+    transition: 150ms;
+    width: 240px;
+    background-color: white;
+    bottom: 32.5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    cursor: pointer;
+}
+
+.chatgpt:active {
+    box-shadow: none;
+}
+
+.chatgpt:hover img {
+    transition: inherit;
+    width: 35px;
+    filter: brightness(80%);
+}
+
+.chatgpt:hover div {
+    transition: inherit;
+    margin-top: 6px;
+    font-size: 15px;
+    color: #00a050;
+}
+
+.chatgpt img {
+    transition: inherit;
+    width: 30px;
+    float: left;
+    filter: brightness(87.5%) drop-shadow(0 0 0.5px rgba(0, 0, 0, 0.4));
+}
+
+.chatgpt div {
+    transition: inherit;
+    margin-top: 5px;
+}
