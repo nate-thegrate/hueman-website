@@ -4,7 +4,7 @@
     }
 } */
 
-@media (min-width: 1080px) {
+@media (min-width: 720px) {
     body {
         zoom: 150%;
     }
@@ -22,7 +22,7 @@ body {
 
 h1 {
     width: 285px;
-    text-align: center;
+    text-align: right;
     color: #008040;
     letter-spacing: 1px;
 }
@@ -42,10 +42,6 @@ span {
 
 .spacer {
     flex: 100%;
-}
-
-.mid-spacer {
-    flex: 10%;
 }
 
 #logo {

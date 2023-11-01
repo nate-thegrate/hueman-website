@@ -4,7 +4,7 @@
     }
 } */
 
-@media (min-width: 1080px) {
+@media (min-width: 720px) {
     body {
         zoom: 150%;
     }
@@ -132,17 +132,21 @@ h2 {
     flex: 10%;
 }
 
+a {
+    text-decoration: none;
+}
 
 .chatgpt {
     transition: 150ms;
     position: fixed;
-    right: 0;
     background-color: #ddffee;
-    border-radius: 12px 0 0 12px;
+    border-radius: 12px;
     letter-spacing: 0.5px;
-    width: 220px;
+    width: 200px;
     padding: 20px;
-    bottom: 33%;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .chatgpt:hover {
