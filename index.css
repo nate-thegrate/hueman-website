@@ -10,7 +10,7 @@ button {
 }
 
 #main-content {
-    position: absolute;
+    position: fixed;
     width: 90%;
     top: 5%;
     left: 5%;
@@ -123,7 +123,7 @@ h2 {
 
 .chatgpt {
     transition: 150ms;
-    position: absolute;
+    position: fixed;
     right: 0;
     background-color: #ddffee;
     border-radius: 12px 0 0 12px;
@@ -131,14 +131,11 @@ h2 {
     width: 220px;
     padding: 20px;
     bottom: 33%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
 }
 
 .chatgpt:hover {
     transition: 150ms;
-    width: 240px;
     background-color: white;
-    bottom: 32.5%;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
     cursor: pointer;
 }
@@ -149,14 +146,11 @@ h2 {
 
 .chatgpt:hover img {
     transition: inherit;
-    width: 35px;
     filter: brightness(80%);
 }
 
 .chatgpt:hover div {
     transition: inherit;
-    margin-top: 6px;
-    font-size: 15px;
     color: #00a050;
 }
 
@@ -164,10 +158,37 @@ h2 {
     transition: inherit;
     width: 30px;
     float: left;
-    filter: brightness(87.5%) drop-shadow(0 0 0.5px rgba(0, 0, 0, 0.4));
+    filter: brightness(87.5%);
 }
 
 .chatgpt div {
     transition: inherit;
     margin-top: 5px;
+}
+
+.open-source {
+    transition: 150ms;
+    width: 250px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 25px 25px 0px 0px;
+    font-family: 'Gaegu';
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: #80fff8;
+}
+
+.open-source:hover {
+    transition: 150ms;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.open-source:active {
+    transition: 150ms;
+    padding-bottom: 15px;
+    cursor: pointer;
 }
