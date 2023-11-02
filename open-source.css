@@ -46,3 +46,20 @@ ul p {
     margin-top: 30px;
     margin-bottom: 8px;
 }
+
+#go-back {
+    transition: 100ms;
+    position: fixed;
+    left: 0;
+    top: 2%;
+    background-color: #fff2d6;
+    padding: 8px 12px 8px 6px;
+    border-radius: 0 100px 100px 0;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0.5px 3px;
+}
+
+#go-back:hover {
+    transition: 100ms;
+    padding-left: 12px;
+}
