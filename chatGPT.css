@@ -17,6 +17,7 @@ body {
 }
 
 #title {
+    margin-top: 30px;
     display: flex;
 }
 
@@ -117,7 +118,7 @@ a {
     transition: 100ms;
     position: fixed;
     left: 0;
-    top: 2%;
+    top: 8px;
     background-color: #fff2d6;
     padding: 8px 12px 8px 6px;
     border-radius: 0 100px 100px 0;
