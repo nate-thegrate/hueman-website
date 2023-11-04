@@ -1,9 +1,3 @@
-/* @media (max-width: 539px) {
-    body {
-        zoom: 90%;
-    }
-} */
-
 @media (min-width: 720px) {
     body {
         zoom: 150%;
@@ -75,7 +69,6 @@ a {
     margin: 50px auto;
     font-family: inherit;
     color: black;
-    /* background-color: #f0fff8; */
     color: #007038;
     border: #007038 2px solid;
     border-radius: 100px;
