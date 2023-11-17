@@ -81,6 +81,10 @@ h2 {
     border-radius: 100px;
 }
 
+.linux {
+    margin-top: 8px;
+}
+
 .release-status {
     height: 15px;
     font-family: 'Gaegu';
@@ -138,7 +142,7 @@ a {
     letter-spacing: 0.5px;
     width: 200px;
     padding: 20px;
-    bottom: 25%;
+    top: 67%;
     left: 50%;
     transform: translateX(-50%);
 }
