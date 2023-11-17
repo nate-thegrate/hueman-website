@@ -1,3 +1,9 @@
+@media (min-width: 900px) {
+    body {
+        zoom: 150%;
+    }
+}
+
 body {
     font-family: 'Sometype Mono';
     color: #600030;
