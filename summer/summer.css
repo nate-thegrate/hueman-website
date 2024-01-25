@@ -1,0 +1,134 @@
+@media (min-width: 720px) {
+    body {
+        zoom: 150%;
+    }
+}
+
+body {
+    font-family: 'Nunito Sans';
+    color: white;
+    background-color: black;
+    margin: 0
+}
+
+.summer {
+    color: #80ff00;
+    font-weight: bold;
+}
+
+#yellow {
+    color: #ffff00;
+    font-weight: bold;
+}
+
+#green {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+#spring {
+    color: #00ff80;
+    font-weight: bold;
+}
+
+#orange {
+    color: #ff8000;
+    font-weight: bold;
+}
+
+#brown {
+    color: #804000;
+    font-weight: bold;
+}
+
+.pic {
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    width: 1000px;
+}
+
+p {
+    margin: 10px;
+}
+
+#cooler {
+    color: #b0f0ff;
+}
+
+#warmer {
+    color: #fff0b0;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    margin: 20px 10%;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.row div {
+    flex: 1;
+    color: black;
+    height: 100px;
+    padding-top: 25px;
+}
+
+.row> :nth-child(1) {
+    background-color: #00ff80;
+}
+
+.row> :nth-child(2) {
+    background-color: #00ff00;
+}
+
+.row> :nth-child(3) {
+    background-color: #80ff00;
+}
+
+.color-code {
+    font-family: 'Sometype Mono';
+    font-size: 16px;
+}
+
+.wheel-holder {
+    margin: 25px auto 0;
+    width: 80%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#wheel {
+    width: 10px;
+}
+
+#gross {
+    color: #b2d63f;
+    font-weight: bolder;
+    text-shadow: white 0 0 1.5px;
+}
+
+#chartreuse-compare div {
+    height: 50px;
+    padding: 0;
+}
+
+#chartreuse-compare> :nth-child(1) {
+    background-color: #b2d63f;
+}
+
+#chartreuse-compare> :nth-child(2) {
+    background-color: #80ff00;
+}
+
+.small-caps {
+    font-size: 11px;
+    font-weight: bolder;
+}
