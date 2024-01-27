@@ -41,10 +41,12 @@ span {
     filter: brightness(50%);
 }
 
-#info {
+.info {
     border-radius: 20px;
     background-color: #c0f0d8;
-    margin: 0 8%;
+    margin: auto;
+    width: 75%;
+    max-width: 450px;
     padding: 20px 33px;
 }
 
