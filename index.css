@@ -63,9 +63,6 @@ h2 {
 
 .buttons {
     display: flex;
-    margin: 0 5%;
-    align-self: center;
-    font-weight: 600;
 }
 
 .buttons button {
@@ -76,43 +73,64 @@ h2 {
     background-color: #6c4b00;
     text-align: center;
     font-size: 14px;
-    margin: 5px;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 100px;
 }
 
-.linux {
-    margin-top: 8px;
+#youtube {
+    display: block;
+    margin: 10px 50%;
+    width: max-content;
+    transform: translateX(-50%);
 }
 
-.release-status {
-    height: 15px;
-    font-family: 'Gaegu';
-    font-size: 12px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    margin-top: -6px;
+#youtube div {
+    margin: 2px 5px;
+    color: white;
 }
 
-.coming-soon {
-    opacity: 0.5;
+#youtube svg {
+    margin-top: 6px;
+}
+
+#youtube path {
+    fill: #ff0000;
+}
+
+#youtube a button {
+    width: max-content;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 0px 5px;
+}
+
+#trailer {
+    color: #000000;
+    margin: 0 2px;
 }
 
 
-.coming-soon:hover~.release-status {
-    opacity: 1;
+#youtube a button>div {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
 }
 
-.coming-soon:focus~.release-status {
-    opacity: 1;
+
+#youtube a button:hover {
+    box-shadow: #00000040 0 1px 1px;
+}
+
+#youtube a button:active {
+    background-color: #fff0f0;
 }
 
 .buttons a button:hover {
     transition-duration: 50ms;
     cursor: pointer;
     background-color: #805900;
-    box-shadow: rgba(0, 0, 0, 0.75) 0 1px 1px;
+    box-shadow: #000000c0 0 1px 1px;
 }
 
 .buttons a button:active {
@@ -150,7 +168,7 @@ a {
 .chatgpt:hover {
     transition: 150ms;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    box-shadow: #00000010 0 0 10px;
     cursor: pointer;
 }
 
