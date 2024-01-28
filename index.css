@@ -136,8 +136,7 @@ h2 {
 .buttons a button:active {
     transition-duration: 50ms;
     background-color: #6c4b00;
-    margin-top: 6px;
-    margin-bottom: 4px;
+    transform: translateY(2px);
 }
 
 .spacer {
