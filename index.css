@@ -80,7 +80,7 @@ h2 {
 
 #youtube {
     display: block;
-    margin: 10px 50%;
+    margin: 30px 50% 0;
     width: max-content;
     transform: translateX(-50%);
 }
