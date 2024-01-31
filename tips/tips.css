@@ -1,15 +1,17 @@
 @font-face {
     font-family: Gaegu;
-    src: url('./gaegu-font/Gaegu-Regular.ttf') format('truetype');
+    src: url('../fonts/Gaegu-Regular.ttf') format('truetype');
+    src: url('../fonts/Gaegu-Regular.woff') format('woff');
+    src: url('../fonts/Gaegu-Regular.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: Gaegu;
-    src: url('./gaegu-font/Gaegu-Bold.ttf') format('truetype');
+    src: url('../fonts/Gaegu-Bold.ttf') format('truetype');
+    src: url('../fonts/Gaegu-Bold.woff') format('woff');
+    src: url('../fonts/Gaegu-Bold.woff2') format('woff2');
     font-weight: bold;
-    font-style: normal;
 }
 
 body {

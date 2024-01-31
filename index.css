@@ -6,18 +6,39 @@
 
 @font-face {
     font-family: Gaegu;
-    src: url('./gaegu-font/Gaegu-Regular.ttf') format('truetype');
+    src: url('./fonts/Gaegu-Regular.ttf') format('truetype');
+    src: url('./fonts/Gaegu-Regular.woff') format('woff');
+    src: url('./fonts/Gaegu-Regular.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: Gaegu;
-    src: url('./gaegu-font/Gaegu-Bold.ttf') format('truetype');
+    src: url('./fonts/Gaegu-Bold.ttf') format('truetype');
+    src: url('./fonts/Gaegu-Bold.woff') format('woff');
+    src: url('./fonts/Gaegu-Bold.woff2') format('woff2');
     font-weight: bold;
-    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Local Nunito';
+    src: url('./fonts/NunitoSans-ExtraLight.ttf') format('truetype');
+    src: url('./fonts/NunitoSans-ExtraLight.woff') format('woff');
+    src: url('./fonts/NunitoSans-ExtraLight.woff2') format('woff2');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Local Nunito';
+    src: url('./fonts/NunitoSans-ExtraBold.ttf') format('truetype');
+    src: url('./fonts/NunitoSans-ExtraBold.woff') format('woff');
+    src: url('./fonts/NunitoSans-ExtraBold.woff2') format('woff2');
+    font-weight: bolder;
+}
+
+:root {
+    --super-color: #ffa3a3;
+}
 
 body {
     background-color: #fff2d6;
@@ -48,10 +69,17 @@ h1 {
 
 h2 {
     font-family: 'Gaegu';
-    margin-top: -20px;
-    margin-bottom: 50px;
+    margin: -20px 0 0;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Gaegu';
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
     text-align: center;
 }
 
@@ -194,8 +222,8 @@ a {
     padding: 10px;
     border-radius: 25px 25px 0px 0px;
     font-family: 'Gaegu';
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 3px;
     background-color: #80fff8;
 }
 
@@ -209,4 +237,86 @@ a {
     transition: 150ms;
     padding-bottom: 15px;
     cursor: pointer;
+}
+
+#super {
+    display: none;
+    font-family: 'Local Nunito';
+    color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid var(--super-color);
+    /* padding: 30px 50px; */
+    width: 270px;
+    height: 402px;
+}
+
+#super h1 {
+    font-family: 'Local Nunito';
+    font-weight: 100;
+    font-size: 28px;
+    text-shadow: none;
+    margin: 25px 0 0;
+}
+
+#HUE {
+    color: var(--super-color);
+    font-size: 0.72em;
+    font-weight: bolder;
+}
+
+#super h5 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#super div {
+    padding: 10px 0;
+    width: max-content;
+    margin: auto;
+}
+
+#super button {
+    transition-duration: 100ms;
+    border: none;
+    width: 120px;
+    border-radius: 100px;
+    background-color: var(--super-color);
+    color: #121212;
+}
+
+#super button:hover {
+    transition-duration: 100ms;
+    cursor: pointer;
+    color: #000000;
+    box-shadow: #000000ff 0 1px 10px;
+}
+
+#super button:active {
+    transition-duration: 1s;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#super button p {
+    margin: 8px 0;
+    font-size: 16px;
+    transform: scaleX(0.95);
+}
+
+#github {
+    margin-top: 25px !important;
+}
+
+#overlay {
+    position: absolute;
+    min-width: 100%;
+    height: 92%;
+    top: 0px;
+    left: 0;
+    background-color: #121212;
+    transition: background-color 1.5s linear;
 }
