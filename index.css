@@ -248,9 +248,8 @@ a {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     border: 2px solid var(--super-color);
-    /* padding: 30px 50px; */
     width: 270px;
-    height: 402px;
+    height: 375px;
 }
 
 #super h1 {
@@ -282,7 +281,7 @@ a {
 #super button {
     transition-duration: 100ms;
     border: none;
-    width: 120px;
+    width: 108px;
     border-radius: 100px;
     background-color: var(--super-color);
     color: #121212;
@@ -302,7 +301,7 @@ a {
 }
 
 #super button p {
-    margin: 8px 0;
+    margin: 5px 0;
     font-size: 16px;
     transform: scaleX(0.95);
 }
