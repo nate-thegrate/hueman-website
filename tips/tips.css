@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Gaegu;
+    src: url('./gaegu-font/Gaegu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gaegu;
+    src: url('./gaegu-font/Gaegu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', 'Nunito Sans', Helvetica, sans-serif;

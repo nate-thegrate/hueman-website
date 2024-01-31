@@ -4,6 +4,21 @@
     }
 }
 
+@font-face {
+    font-family: Gaegu;
+    src: url('./gaegu-font/Gaegu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gaegu;
+    src: url('./gaegu-font/Gaegu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 body {
     background-color: #fff2d6;
     font-family: 'Nunito Sans';
@@ -27,7 +42,6 @@ h1 {
     margin-top: -25px;
     margin-bottom: 0;
     font-size: 80px;
-    font-weight: normal;
     text-align: center;
     text-shadow: white 0 0 3px;
 }
@@ -58,6 +72,7 @@ h2 {
 #man {
     color: #6c4b00;
     text-shadow: none;
+    font-weight: normal;
 }
 
 

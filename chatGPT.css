@@ -4,6 +4,20 @@
     }
 }
 
+@font-face {
+    font-family: Gaegu;
+    src: url('./gaegu-font/Gaegu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gaegu;
+    src: url('./gaegu-font/Gaegu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     font-family: 'Nunito Sans';
     background-color: #e0fff0;
