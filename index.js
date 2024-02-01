@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('focus', startCountdown);
 
     var countdownTimeout;
-    var countdownDuration = 15000;
+    var countdownDuration = 10000;
 
     function startCountdown() {
         var startTime = Date.now();
