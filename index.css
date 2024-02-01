@@ -103,6 +103,16 @@ h3 {
     font-weight: normal;
 }
 
+#cycle {
+    margin: 10px auto 0;
+    width: max-content;
+}
+
+#cycle svg {
+    transition-duration: 1s;
+    fill: #fff2d6;
+}
+
 
 .buttons {
     display: flex;

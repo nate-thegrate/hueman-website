@@ -1,78 +1,71 @@
-document.addEventListener('DOMContentLoaded', function () {
+var countdownTimeout;
+var countdownDuration = 10000;
 
-    // wait 15 seconds, reset timer if user clicks away
-    window.addEventListener('blur', clickAway);
-    window.addEventListener('focus', startCountdown);
+function startCountdown() {
+    var startTime = Date.now();
 
-    var countdownTimeout;
-    var countdownDuration = 10000;
-
-    function startCountdown() {
-        var startTime = Date.now();
-
-        function updateCountdown() {
-            if (Date.now() - startTime < countdownDuration) {
-                countdownTimeout = setTimeout(updateCountdown, 1000);
-            } else {
-                countdownFinished();
-            }
+    function updateCountdown() {
+        if (Date.now() - startTime < countdownDuration) {
+            countdownTimeout = setTimeout(updateCountdown, 1000);
+        } else {
+            countdownFinished();
         }
-        updateCountdown();
     }
+    updateCountdown();
+}
 
-    function clickAway() {
-        clearTimeout(countdownTimeout);
-    }
+function clickAway() {
+    clearTimeout(countdownTimeout);
+}
 
-    function countdownFinished() {
-        window.removeEventListener('blur', clickAway);
-        window.removeEventListener('focus', startCountdown);
+function countdownFinished() {
+    window.removeEventListener('blur', clickAway);
+    window.removeEventListener('focus', startCountdown);
 
-        countdownText.textContent = '5';
-        setTimeout(textCountdown, 1000);
-    }
+    var cycleIcon = document.getElementById('cycle').getElementsByTagName('svg')[0];
+    cycleIcon.style.fill = '#000000';
+    cycleIcon.style.cursor = 'pointer';
+    cycleIcon.addEventListener('click', chromaticVerity);
+}
 
-    // show a countdown from 5
-    var countdownText = document.getElementById('countdown');
+function chromaticVerity() {
+    document.getElementById('main-content').style.display = 'none';
+    document.getElementById('super').style.display = 'inherit';
+    document.body.style.backgroundColor = '#121212';
+    updateColor();
+
     var overlay = document.getElementById('overlay');
 
-    function textCountdown() {
-        var currentCount = parseInt(countdownText.textContent);
+    setTimeout(function () {
+        overlay.style.backgroundColor = '#12121200';
+    }, 500);
+    setTimeout(function () {
+        overlay.style.display = 'none';
+    }, 2000);
+}
 
-        if (currentCount > 0) {
-            countdownText.textContent = (currentCount - 1).toString();
-            setTimeout(textCountdown, 1000);
-        } else {
-            // switch to 'chromatic verity.'
-            document.getElementById('main-content').style.display = 'none';
-            document.getElementById('super').style.display = 'inherit';
-            document.body.style.backgroundColor = '#121212';
-            updateColor();
-            setTimeout(function () {
-                overlay.style.backgroundColor = '#12121200';
-            }, 500);
-            setTimeout(function () {
-                overlay.style.display = 'none';
-            }, 2000);
-        }
+var cycle = 0;
+var hue = 0;
+
+// cycle the hue every 4 frames
+function colorIncrement() {
+    cycle = (cycle + 1) % 4;
+    if (cycle == 0) {
+        hue = (hue + 1) % 360;
     }
+    return superColors[hue];
+}
 
-    var cycle = 0;
-    var hue = 0;
+function updateColor() {
+    document.documentElement.style.setProperty('--super-color', colorIncrement());
+    requestAnimationFrame(updateColor);
+}
 
-    // cycle the hue every 4 frames
-    function colorIncrement() {
-        cycle = (cycle + 1) % 4;
-        if (cycle == 0) {
-            hue = (hue + 1) % 360;
-        }
-        return superColors[hue];
-    }
 
-    function updateColor() {
-        document.documentElement.style.setProperty('--super-color', colorIncrement());
-        requestAnimationFrame(updateColor);
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    // wait 10 seconds, reset timer if user clicks away
+    window.addEventListener('blur', clickAway);
+    window.addEventListener('focus', startCountdown);
 
     startCountdown();
 });
