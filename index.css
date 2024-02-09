@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: Gaegu;
+    font-family: 'Local Gaegu';
     src: url('./fonts/Gaegu-Regular.ttf') format('truetype');
     src: url('./fonts/Gaegu-Regular.woff') format('woff');
     src: url('./fonts/Gaegu-Regular.woff2') format('woff2');
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: Gaegu;
+    font-family: 'Local Gaegu';
     src: url('./fonts/Gaegu-Bold.ttf') format('truetype');
     src: url('./fonts/Gaegu-Bold.woff') format('woff');
     src: url('./fonts/Gaegu-Bold.woff2') format('woff2');
@@ -60,7 +60,7 @@ button {
 }
 
 h1 {
-    font-family: 'Gaegu';
+    font-family: 'Gaegu', 'Local Gaegu';
     margin-top: -25px;
     margin-bottom: 0;
     font-size: 80px;
@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Gaegu';
+    font-family: 'Gaegu', 'Local Gaegu';
     margin: -20px 0 0;
     font-size: 18px;
     font-weight: bold;
@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Gaegu';
+    font-family: 'Gaegu', 'Local Gaegu';
     font-size: 48px;
     font-weight: normal;
     margin: 0;
@@ -151,8 +151,6 @@ h3 {
 }
 
 #youtube a button {
-    /* width: max-content; */
-    /* border-radius: 25px; */
     background-color: #ffffff;
     padding: 0px 5px;
 }
@@ -232,7 +230,7 @@ a {
     transform: translateX(-50%);
     padding: 10px;
     border-radius: 25px 25px 0px 0px;
-    font-family: 'Gaegu';
+    font-family: 'Gaegu', 'Local Gaegu';
     font-size: 20px;
     letter-spacing: 3px;
     background-color: #80fff8;
